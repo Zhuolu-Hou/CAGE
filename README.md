@@ -1,38 +1,88 @@
 # CAGE: Cascaded Attribute–Geometric Outlier Rejection and Benchmarking for Robust Cross-Modal Image Matching
 
-This repository provides the official implementation of the **CAGE** algorithm, a robust framework designed for outlier rejection in challenging cross-modal image matching scenarios.
+[![Platform](https://img.shields.io/badge/Platform-MATLAB-blue)](#quick-start)
+[![Task](https://img.shields.io/badge/Task-Outlier%20Rejection%20%7C%20Cross--Modal%20Matching-orange)](#overview)
+[![Status](https://img.shields.io/badge/Status-Demo%20Only-lightgrey)](#status)
+[![License](https://img.shields.io/badge/License-TBD-lightgrey)](#license)
+
+**CAGE** is a cascaded framework for **robust outlier rejection** in **cross-modal image matching** (e.g., Optical–SAR, Infrared–Visible, and medical multi-modality). It integrates **local attribute cues** with **geometric consistency** to recover reliable correspondences under **extremely low inlier ratios**.
 
 **Author:** Zhuolu Hou  
 **Affiliation:** Electronic Information School, Wuhan University  
 
 ---
 
-## 1. Overview
-[cite_start]Establishing reliable correspondences between cross-modal images (e.g., Optical-SAR, Infrared-Visible, and Medical images) is inherently difficult due to non-linear intensity variations and extremely low inlier ratios. [cite_start]**CAGE** introduces a cascaded architecture that effectively integrates **local attributes** and **geometric consistency** to establish accurate feature correspondences and identify coherent motion patterns[cite: 8, 11].
+## Table of Contents
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Benchmark Suite](#benchmark-suite)
+- [Quick Start](#quick-start)
+- [Repository Structure](#repository-structure)
+- [Notes on Reproducibility](#notes-on-reproducibility)
+- [Status](#status)
+- [Citation](#citation)
+- [License](#license)
+- [Contact](#contact)
 
 ---
 
-## 2. Main Contributions
-* [cite_start]**Robust Outlier Rejection**: Specifically optimized for scenarios with extremely low inlier ratios, providing more competitive results than current state-of-the-art methods in terms of generality and effectiveness[cite: 15, 113].
-* [cite_start]**Cascaded Framework**: Bridges the gap between attribute-level similarity and geometric-level consensus through a sparse and general graph-based strategy[cite: 9, 13].
-* **Integrity and Rigour**: Following strict geometric constraints, **control points are preserved and NOT optimized in any mode** to ensure matching accuracy.
-* **Large-Scale Benchmarking**: A comprehensive multi-modal evaluation framework that pushes the boundaries of robust image registration.
+## Overview
+Establishing reliable correspondences between cross-modal images is challenging due to **non-linear intensity variations**, modality-specific distortions, and **very low inlier ratios**.  
+**CAGE** addresses this by cascading two complementary stages:
+
+1. **Attribute-level filtering** to suppress obvious mismatches using local descriptors/attributes.
+2. **Geometric-level consensus** to identify coherent motion patterns and retain globally consistent matches.
+
+> **Design principle:** Control points are **preserved and never optimized** in any mode to avoid drifting away from true correspondences.
 
 ---
 
-## 3. The Benchmarking Dataset
-The effectiveness of CAGE is demonstrated through an extensive benchmarking suite covering diverse imaging modalities:
-* **24 Modality Combinations**: Including Optical-SAR, Day-Night, Infrared-Visible, Map-Optical, MRI-CT, PD-T1, SPECT-MRI, etc.
-* **11,808 Image Pairs**: A massive collection of cross-modal imaging data.
-* **1,550,947 Correspondences**: Manually verified ground-truth tie points ensuring highly reliable evaluation metrics.
+## Key Features
+- **Robust Outlier Rejection**  
+  Designed for extremely low inlier ratio settings, aiming for strong generality across modalities.
+
+- **Cascaded Attribute–Geometric Framework**  
+  Bridges attribute similarity and geometric consensus via a **sparse, general graph-based strategy**.
+
+- **Rigorous Geometry**  
+  Enforces strict geometric constraints; **control points are not refined** to maintain matching fidelity.
+
+- **Large-Scale Benchmarking**  
+  Includes a comprehensive evaluation suite for cross-modal registration/matching.
 
 ---
 
-## 4. Quick Start
-To evaluate the algorithm's performance on the provided sample datasets, run the following command in MATLAB:
+## Benchmark Suite
+CAGE is evaluated on a large-scale multi-modal benchmark:
+
+| Item | Scale |
+|---|---:|
+| Modality combinations | **24** |
+| Image pairs | **11,808** |
+| Ground-truth correspondences | **1,550,947** |
+
+**Covered modalities include (not limited to):**  
+Optical–SAR, Day–Night, Infrared–Visible, Map–Optical, MRI–CT, PD–T1, SPECT–MRI, etc.
+
+---
+
+## Quick Start
+Run the demo in **MATLAB**:
 
 ```matlab
-run_demo;
+demo;
 ```
-## 5. Status
-The full source code, benchmarking datasets, and pre-trained models will be released upon the formal acceptance of the paper. Currently, this repository serves as a demonstration of the algorithm's interface and benchmarking results for the review process.
+
+## Status
+
+🚧 Demo Only (Review Version)
+The full source code and full benchmarking dataset will be released upon formal acceptance of the paper.
+This repository currently provides:
+
+A runnable MATLAB demo illustrating the interface
+
+Representative benchmarking results for evaluation during review
+
+## License
+
+License will be specified upon release of the full code.
