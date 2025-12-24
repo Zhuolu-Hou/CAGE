@@ -8,7 +8,7 @@ This repository provides the official implementation of the **CAGE** algorithm, 
 ---
 
 ## 1. Overview
-[cite_start]Establishing reliable correspondences between cross-modal images (e.g., Optical-SAR, Infrared-Visible, and Medical images) is inherently difficult due to non-linear intensity variations and extremely low inlier ratios[cite: 8, 31, 135]. [cite_start]**CAGE** introduces a cascaded architecture that effectively integrates **local attributes** and **geometric consistency** to establish accurate feature correspondences and identify coherent motion patterns[cite: 8, 11].
+[cite_start]Establishing reliable correspondences between cross-modal images (e.g., Optical-SAR, Infrared-Visible, and Medical images) is inherently difficult due to non-linear intensity variations and extremely low inlier ratios. [cite_start]**CAGE** introduces a cascaded architecture that effectively integrates **local attributes** and **geometric consistency** to establish accurate feature correspondences and identify coherent motion patterns[cite: 8, 11].
 
 ---
 
@@ -33,6 +33,6 @@ To evaluate the algorithm's performance on the provided sample datasets, run the
 
 ```matlab
 run_demo;
-
-## 4. Status
+```
+## 5. Status
 The full source code, benchmarking datasets, and pre-trained models will be released upon the formal acceptance of the paper. Currently, this repository serves as a demonstration of the algorithm's interface and benchmarking results for the review process.
