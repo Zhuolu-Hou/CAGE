@@ -14,7 +14,6 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Key Features](#key-features)
 - [Benchmark Suite](#benchmark-suite)
 - [Quick Start](#quick-start)
 - [Repository Structure](#repository-structure)
@@ -34,21 +33,6 @@ Establishing reliable correspondences between cross-modal images is challenging 
 2. **Geometric-level consensus** to identify coherent motion patterns and retain globally consistent matches.
 
 > **Design principle:** Control points are **preserved and never optimized** in any mode to avoid drifting away from true correspondences.
-
----
-
-## Key Features
-- **Robust Outlier Rejection**  
-  Designed for extremely low inlier ratio settings, aiming for strong generality across modalities.
-
-- **Cascaded Attribute–Geometric Framework**  
-  Bridges attribute similarity and geometric consensus via a **sparse, general graph-based strategy**.
-
-- **Rigorous Geometry**  
-  Enforces strict geometric constraints; **control points are not refined** to maintain matching fidelity.
-
-- **Large-Scale Benchmarking**  
-  Includes a comprehensive evaluation suite for cross-modal registration/matching.
 
 ---
 
@@ -82,6 +66,8 @@ This repository currently provides:
 A runnable MATLAB demo illustrating the interface
 
 Representative benchmarking results for evaluation during review
+
+---
 
 ## License
 
