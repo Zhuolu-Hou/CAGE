@@ -16,12 +16,8 @@
 - [Overview](#overview)
 - [Benchmark Suite](#benchmark-suite)
 - [Quick Start](#quick-start)
-- [Repository Structure](#repository-structure)
-- [Notes on Reproducibility](#notes-on-reproducibility)
 - [Status](#status)
-- [Citation](#citation)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
@@ -64,8 +60,6 @@ The full source code and full benchmarking dataset will be released upon formal 
 This repository currently provides:
 
 A runnable MATLAB demo illustrating the interface
-
-Representative benchmarking results for evaluation during review
 
 ---
 
