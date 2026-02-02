@@ -28,8 +28,6 @@ Establishing reliable correspondences between cross-modal images is challenging 
 1. **Attribute-level filtering** to suppress obvious mismatches using local descriptors/attributes.
 2. **Geometric-level consensus** to identify coherent motion patterns and retain globally consistent matches.
 
-> **Design principle:** Control points are **preserved and never optimized** in any mode to avoid drifting away from true correspondences.
-
 ---
 
 ## Benchmark Suite
