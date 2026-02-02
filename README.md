@@ -8,7 +8,7 @@
 **CAGE** is a cascaded framework for **robust outlier rejection** in **cross-modal image matching** (e.g., Optical–SAR, Infrared–Visible, and medical multi-modality). It integrates **local attribute cues** with **geometric consistency** to recover reliable correspondences under **extremely low inlier ratios**.
 
 **Author:** Zhuolu Hou  
-**Affiliation:** Electronic Information School, Wuhan University  
+**Affiliation:** School of Remote Sensing and Information Engineering, Wuhan University  
 
 ---
 
